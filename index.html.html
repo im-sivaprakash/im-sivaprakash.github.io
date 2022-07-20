@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siva | portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      :root {
+        --primary: #00bbff;
+      }
+      p,
+      li {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
+      #container {
+        margin-top: 5rem;
+        padding-left: 20rem;
+        padding-right: 20rem;
+      }
+      .card {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+      }
+      .menu {
+        display: inline-block;
+        padding: 0 9vw 0 8vw;
+        position: relative;
+      }
+
+      .menu-option {
+        display: inline-block;
+        margin: 0 5vw 0 5vw;
+        cursor: pointer;
+      }
+      #page2 {
+        display: none;
+      }
+      #page3 {
+        display: none;
+      }
+      /*---------Home------*/
+      #home {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding: 2rem;
+      }
+
+      .img {
+        height: 10rem;
+        width: 10rem;
+        margin-left: 8rem;
+        background-color: var(--primary);
+        border-radius: 50%;
+        opacity: 50%;
+      }
+
+      #details > h1 {
+        font-family: Rubik;
+        margin-bottom: 0px;
+      }
+      #details > h4 {
+        font-family: Roboto;
+        margin-top: 10px;
+        color: var(--primary);
+      }
+
+      /*---------About------*/
+      #about {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding: 2rem;
+      }
+
+      .heading {
+        font-family: Rubik;
+        padding-left: 2rem;
+      }
+      ul {
+        list-style: none;
+      }
+      ul > li {
+        margin: 1rem 1rem;
+      }
+      .point {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        background-color: var(--primary);
+        margin-right: 0.6rem;
+        border-radius: 50%;
+      }
+
+      .degree {
+        font-weight: 900;
+        font-family: Rubik;
+      }
+      .college-name,
+      .year {
+        margin-left: 1rem;
+        font-style: italic;
+      }
+      .year {
+        color: var(--primary);
+      }
+      /*---------contact------*/
+      #contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding: 2rem;
+      }
+
+      #social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem;
+        padding-top: 1rem;
+      }
+      #social {
+        display: block;
+        text-align: center;
+        height: 4rem;
+        width: 4rem;
+        background-color: #bfe4f1ef;
+        border-radius: 50%;
+      }
+
+      #social > a > i {
+        font-size: 2rem;
+        line-height: 4rem;
+        margin: 0 auto;
+        color: #000;
+      }
+
+      .text-box {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2.5rem;
+        border-radius: 8px;
+        padding: 3%;
+        font-size: 1rem;
+        border: 2px solid var(--primary);
+      }
+      textarea {
+        resize: none;
+      }
+      .btn {
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+        margin-left: 2.5rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+        background-color: var(--primary);
+        border-radius: 4px;
+        color: white;
+        border: none;
+        transition: 0.5s;
+      }
+      .btn:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="nav card">
+        <ul class="menu">
+          <li class="menu-option" id="about-btn">About</li>
+          <li class="menu-option" id="home-btn">Home</li>
+          <li class="menu-option" id="contact-btn">Contact</li>
+        </ul>
+      </div>
+      <div id="page1">
+        <div id="home">
+          <div class="img"></div>
+          <div id="details">
+            <h1>Siva prakash</h1>
+            <h4>Software Engineer & Designer</h4>
+            <p>I love to create and explore things.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="page2">
+        <div id="about">
+          <div class="card">
+            <h2 class="heading">Skills</h2>
+            <ul>
+              <li>
+                <div class="point"></div>
+                HTML & CSS
+              </li>
+              <li>
+                <div class="point"></div>
+                Javascript
+              </li>
+              <li>
+                <div class="point"></div>
+                Java
+              </li>
+              <li>
+                <div class="point"></div>
+                Graphic Designing
+              </li>
+              <li>
+                <div class="point"></div>
+                UI/UX
+              </li>
+              <li>
+                <div class="point"></div>
+                React & Redux
+              </li>
+              <li>
+                <div class="point"></div>
+               Node Js
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 class="heading">Education</h2>
+            <ul>
+              <li>
+                <div class="point"></div>
+                <span class="degree">Bachelor of Engineering - BE</span>
+              </li>
+              <li>
+                <span class="college-name"
+                  >St. Joseph's College Of Engineering</span
+                >
+              </li>
+              <li><span class="year">2017 - 2020</span></li>
+            </ul>
+            <ul>
+              <li>
+                <div class="point"></div>
+                <span class="degree">Diploma in Computer Technology</span>
+              </li>
+              <li>
+                <span class="college-name"
+                  >Central polytechnic college ( CPT )</span
+                >
+              </li>
+              <li><span class="year">2015 - 2017</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="page3">
+        <div id="contact">
+          <div class="card">
+            <h2 class="heading">Contact</h2>
+            <form>
+              <input type="text" class="text-box" placeholder="Name" /><br />
+              <textarea
+                class="text-box"
+                placeholder="Message"
+                required=""
+              ></textarea
+              ><br />
+              <input type="submit" class="btn" value="Sent" />
+            </form>
+          </div>
+          <div class="card">
+            <h2 class="heading">Follow me</h2>
+            <div id="social-media">
+              <div id="social">
+                <a href="https://www.instagram.com/im.sivaprakash"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div id="social">
+                <a href="https://www.linkedin.com/in/siva-tp"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <div id="social">
+                <a href="https://github.com/im-sivaprakash"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const homebtn = document.getElementById("home-btn");
+      const contactbtn = document.getElementById("contact-btn");
+      const aboutbtn = document.getElementById("about-btn");
+
+      const page1 = document.getElementById("page1"); //home
+      const page2 = document.getElementById("page2"); //about
+      const page3 = document.getElementById("page3"); //contact
+
+      homebtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        page1.style.display = "block";
+        page2.style.display = "none";
+        page3.style.display = "none";
+      });
+
+      aboutbtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        page1.style.display = "none";
+        page2.style.display = "block";
+        page3.style.display = "none";
+      });
+
+      contactbtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        page1.style.display = "none";
+        page2.style.display = "none";
+        page3.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
